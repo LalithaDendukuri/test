@@ -5,4 +5,5 @@ fun_exitStatus(){
   echo -e "\e[33m  FAILURE \e[0m"
   if
 }
+echo hi
 fun_exitStatus
