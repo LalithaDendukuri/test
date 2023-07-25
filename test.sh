@@ -3,7 +3,7 @@ fun_exitStatus(){
   echo -e "\e[32m SUCCESS \e[0m"
   else
   echo -e "\e[33m  FAILURE \e[0m"
-  if
+  fi
 }
 echo hi
 fun_exitStatus
