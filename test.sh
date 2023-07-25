@@ -7,7 +7,7 @@ fun_exitStatus(){
 }
 echo hi
 fun_exitStatus
-if [ -z "${rabbitmq_app_password}" ]; then
+if [ -z "${1}" ]; then
   echo Input RabbitMQ AppUser Password Missing
   exit 1
 fi
