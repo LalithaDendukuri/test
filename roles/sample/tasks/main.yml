@@ -1,7 +1,3 @@
-- name : install nginx PALY
-  hosts: ALL
-  become: true
-  tasks:
     - name: install TASK
       ansible.builtin.yum:
         name: httpd
@@ -12,8 +8,3 @@
         name: nginx
         state: started
         enabled: yes
-- name : install nginx PALY2
-  hosts: WEB
-  become: true
-  roles:
-        -sample
