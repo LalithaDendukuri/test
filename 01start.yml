@@ -12,8 +12,9 @@
         name: nginx
         state: started
         enabled: yes
+
 - name: install nginx PALY2
   hosts: WEB
   become: true
   roles:
-      -sample
+      - sample
