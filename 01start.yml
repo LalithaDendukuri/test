@@ -1,4 +1,4 @@
-- name : install nginx PALY
+- name: install nginx PALY
   hosts: ALL
   become: true
   tasks:
@@ -12,8 +12,8 @@
         name: nginx
         state: started
         enabled: yes
-- name : install nginx PALY2
+- name: install nginx PALY2
   hosts: WEB
   become: true
   roles:
-        -sample
+      -sample
