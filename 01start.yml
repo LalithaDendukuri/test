@@ -1,8 +1,8 @@
-- name : install nginx
+- name : install nginx PALY
   hosts: WEB
   become: true
   tasks:
-    - name: install
+    - name: install TASK
       ansible.builtin.yum:
         name: nginx
         state: latest
